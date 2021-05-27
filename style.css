@@ -72,7 +72,6 @@ h4 {
 }
 
 body {
-	background: #303E61;
 	font-family: 'Work Sans', sans-serif;
 	color: white;
 	overflow-x: hidden;
@@ -115,6 +114,10 @@ body {
 
 .social {
 	text-align: center;
+}
+
+.header {
+	background: #303E61;
 }
 
 header .row {
@@ -204,7 +207,7 @@ header .social ul a:hover {
 		bottom: 0;
 		right: 0;
 		transform: translateX(100%);
-		background-color: #303E61;
+		background-color: #303E51;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -289,6 +292,12 @@ header .social ul a:hover {
 .btn:hover {
 	color: white;
 	background-color: #303E61;
+}
+
+@media ( max-width: 1140px) {
+	.main {
+		height: auto;
+	}
 }
 
 @media (max-width: 991px) {
@@ -511,6 +520,7 @@ header .social ul a:hover {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-color: #303E61;
 }
 
 .spa::before {
@@ -720,7 +730,7 @@ input[type=email], input[type=tel] {
 }
 
 .footer__inner {
-	margin-top: 85px;
+	margin-top: 35px;
 }
 
 footer .row {
@@ -757,6 +767,7 @@ footer .social ul {
 	max-width: 100%;
 	list-style-type: none;
 	text-decoration: none;
+	margin-top: 35px;
 }
 
 footer .social ul a {
@@ -773,6 +784,18 @@ footer .social ul a:hover {
 	margin-top: 35px;
 	font-weight: 300;
 	font-size: 14px;
+	padding-bottom: 35px;
+	text-align: center;
+}
+
+.copyright a {
+	text-decoration: none;
+	transition: all .5s;
+}
+
+.copyright a:hover {
+	cursor: pointer;
+	color: #EFC351;
 }
 
 @media (max-width: 1180px) {
@@ -787,7 +810,7 @@ footer .social ul a:hover {
 		display: none;
 	}
 	.copyright {
-		margin-top: 0;
+		margin-top: 35px;
 	}
 }
 
